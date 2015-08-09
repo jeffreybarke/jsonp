@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en-us" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>JSONP test runner</title>
+
+    <!-- Mocha test framework and Chai assertion library -->
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script>
+      // Load Chai assertion library.
+      var expect = chai.expect;
+      // Set Mocha UI to BDD.
+      mocha.setup('bdd');
+      // Run Mocha after everything has loaded.
+      window.onload = function() {
+        mocha.run();
+      };
+    </script>
+    <!-- Include and run source file(s) -->
+    <script src="../jsonp.js"></script>
+    <!-- Include and run test spec file(s) -->
+    <script src="./jsonp.test.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="mocha"></div>
+
+  </body>
+
+</html>

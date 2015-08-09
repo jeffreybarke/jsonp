@@ -1,0 +1,42 @@
+{
+  // http://jshint.com/docs/options/
+  // https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+
+  // Enforcing
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "es3": true,
+  "es5": false,
+  "forin": true,
+  "freeze": true,
+  "funcscope": false,
+  "futurehostile": true,
+  "globalstrict": false,
+  "latedef": true,
+  "maxcomplexity": 15,
+  "maxparams": 3,
+  "noarg": true,
+  "nonbsp": true,
+  "nonew": true,
+  "notypeof": true,
+  "singleGroups": true,
+  "strict": true,
+  "undef": true,
+  "unused": true,
+
+  // Relaxing
+  "asi": false,
+  "boss": false,
+  "debug": false,
+  "eqnull": false,
+
+  // Deprecated
+  "camelcase": true,
+  "immed": true,
+  "indent": 2,
+  "maxlen": 80,
+  "newcap": true,
+  "noempty": true,
+  "quotmark": "single"
+}

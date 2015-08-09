@@ -10,3 +10,7 @@ Thumbs.db
 *.sublime-*
 *.tmproj
 *.idea
+
+# Node things
+node_modules
+npm-debug.log

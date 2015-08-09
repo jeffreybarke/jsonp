@@ -1,0 +1,36 @@
+{
+  "name": "jsonp",
+  "version": "0.1.0",
+  "description": "A lightweight JSONP library.",
+  "keywords": [
+    "jsonp",
+    "xdomain",
+    "xhr"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Jeffrey Barke",
+    "email": "jeffrey.barke@jeffreybarke.net",
+    "url": "http://jeffreybarke.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffreybarke/jsonp"
+  },
+  "bugs": "https://github.com/jeffreybarke/jsonp/issues",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "grunt": "0.4.5",
+    "grunt-contrib-copy": "0.8.0",
+    "grunt-contrib-jshint": "0.11.2",
+    "grunt-contrib-uglify": "0.9.1",
+    "grunt-mocha-test": "0.12.7",
+    "jsdom": "3.1.2",
+    "matchdep": "0.3.0",
+    "mocha": "2.2.5"
+  },
+  "private": true
+}
