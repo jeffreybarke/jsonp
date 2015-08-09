@@ -1,0 +1,2 @@
+# Automatic EOL normalization for text files. Convert to LF on check-in.
+* text=auto
