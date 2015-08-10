@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     build: {
       // Build time
-      time: grunt.template.today('mmmm d, yyyy hh:MM:ss TT'),
+      time: grunt.template.today('d mmm yyyy hh:MM:ss TT'),
       // Build version
       version: '<%= pkg.version %>',
       // Build file names
@@ -25,12 +25,13 @@ module.exports = function(grunt) {
 
     copy: {
       dist: {
-        files: [
-          {
-            src: '<%= build.paths.src %>/<%= build.fileNames.src %>',
-            dest: '<%= build.paths.dest %>/<%= build.fileNames.src %>'
+        options: {
+          process: function(content) {
+            return grunt.template.process(content);
           }
-        ]
+        },
+        src: '<%= build.paths.src %>/<%= build.fileNames.src %>',
+        dest: '<%= build.paths.dest %>/<%= build.fileNames.src %>'
       }
     },
 
@@ -62,7 +63,14 @@ module.exports = function(grunt) {
           drop_console: true
         },
         mangle: true,
-        preserveComments: 'some',
+        preserveComments: false,
+        banner: '/*! jsonp.js v<%= build.version %>: A lightweight ' +
+            'JSONP library.\n' +
+            ' *  Copyright 2015 Jeffrey Barke. Released under the MIT ' +
+            'license\n' +
+            ' *  <https://github.com/jeffreybarke/jsonp> . ' +
+            '<%= build.time %>\n' +
+            ' */\n',
         sourceMap: false
       },
       js : {

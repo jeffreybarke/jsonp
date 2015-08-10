@@ -1,6 +1,6 @@
-/*! jsonp.js v<%= build.version %>: A lightweight JSONP library.
+/*! jsonp.js v0.1.0: A lightweight JSONP library.
  *  Copyright 2015 Jeffrey Barke. Released under the MIT license
- *  <https://github.com/jeffreybarke/jsonp> . <%= build.time %>
+ *  <https://github.com/jeffreybarke/jsonp> . 9 Aug 2015 10:57:23 PM
  */
 (function(window, undefined) {
   'use strict';

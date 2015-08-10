@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en-us" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>jsonp.js IE7 test runner</title>
+
+    <!-- Include and run source file(s) -->
+    <script src="../jsonp.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="test"></div>
+
+    <script>
+      jsonp('./mocks/context.js', {
+        callbackName: 'contextCb',
+        success: function(data) {
+          if (data.success === true) {
+            document.getElementById('test').innerHTML = '2 === ' +
+                data.data.length;
+          } else {
+            document.getElementById('test').innerHTML = 'FAIL!';
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
